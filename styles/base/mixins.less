@@ -1,0 +1,391 @@
+._body(){
+  background: @body-color;
+  font: @font-family-base;
+}
+
+._h1(){
+  color: @font-color-h1-h2-h3;
+  text-transform: uppercase;
+  font: @font-family-h1;
+  font-smooth: always;
+}
+
+._h2(){
+  color: @font-color-h1-h2-h3;
+  font: @font-family-h2;
+}
+
+._h3(){
+  color: @font-color-h1-h2-h3;
+  font: @font-family-h3;
+}
+
+._h4(){
+  color: @font-color-h4-h5;
+  font: @font-family-h4;
+}
+
+._h5(){
+  color: @font-color-h4-h5;
+  font: @font-family-h5;
+}
+
+._font-family-nav-vnz(){
+  ._h5;
+  text-transform: uppercase;
+}
+
+._font-family-info-blocks-title(){
+  color: @body-color;
+  text-transform: uppercase;
+  font: @font-family-info-blocks-title;
+}
+
+._font-family-info-blocks-main(){
+  color: @body-color;
+  font: @font-family-info-blocks-main;
+}
+
+._font-family-news-and-events(){
+  color: @font-color-last-news;
+  font: @font-family-base;
+}
+
+._font-family-events-date(){
+  color: @font-color-interesting-events-date;
+  font: @font-family-events-date;
+}
+
+._font-family-news-and-events-info-line(){
+  color: @font-color-last-news-info-line;
+  font: @font-family-last-news-interesting-events-info-line;
+}
+
+._font-family-last-news-interesting-events-info-line(){
+  color: @font-color-interesting-events-info-line;
+  font: @font-family-last-news-interesting-events-info-line;
+}
+
+._font-family-buttons-show-all(){
+  color: @font-color-interesting-events-info-line;
+  font: @font-family-buttons-show-all;
+}
+
+._font-family-placeholder(){
+  color: @font-color-placeholder;
+  font: @font-family-placeholder;
+}
+
+._font-family-link(){
+  color: @font-color-links;
+  font: @font-family-link;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+._font-family-footer-nav-level1(){
+  color: @font-color-footer-nav-level1;
+  text-transform: uppercase;
+  font: @font-family-h5;
+}
+
+._font-family-footer-nav-level2(){
+  color: @font-color-footer-nav-level2;
+  text-decoration: none;
+  font: @font-family-footer-nav-level2;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+._font-family-footer-copyright(){
+  color: @font-color-footer-nav-level2;
+  font: @font-family-footer-copyright;
+}
+
+._font-family-short-text-news-events(){
+  color: @font-color-short-text-news-events;
+  font: @font-family-short-text-news-events;
+}
+
+//info blocks
+._info-blocks-vnz-bg-color-about-vnz-title(){
+  ._font-family-info-blocks-title;
+  background: @info-blocks-vnz-bg-color-about-vnz-title;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-about-vnz-title-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-about-vnz-main-content(){
+  ._font-family-info-blocks-main;
+  background: @info-blocks-vnz-bg-color-about-vnz-main-content;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-about-vnz-main-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-news-and-events-title(){
+  ._font-family-info-blocks-title;
+  background: @info-blocks-vnz-bg-color-news-and-events-title;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-news-and-events-title-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-news-and-events-main-content(){
+  ._font-family-info-blocks-main;
+  background: @info-blocks-vnz-bg-color-news-and-events-main-content;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-news-and-events-main-content-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-specialty-title(){
+  ._font-family-info-blocks-title;
+  background: @info-blocks-vnz-bg-color-specialty-title;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-specialty-title-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-specialty-main-content(){
+  ._font-family-info-blocks-main;
+  background: @info-blocks-vnz-bg-color-specialty-main-content;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-specialty-main-conten-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-for-enrollee-title(){
+  ._font-family-info-blocks-title;
+  background: @info-blocks-vnz-bg-color-for-enrollee-title;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-for-enrollee-title-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-for-enrollee-main-content(){
+  ._font-family-info-blocks-main;
+  background: @info-blocks-vnz-bg-color-for-enrollee-main-content;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-for-enrollee-main-content-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-for-student-title(){
+  ._font-family-info-blocks-title;
+  background: @info-blocks-vnz-bg-color-for-student-title;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-for-student-title-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-for-student-main-content(){
+  ._font-family-info-blocks-main;
+  background: @info-blocks-vnz-bg-color-for-student-main-content;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-for-student-main-content-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-distance-learning-title(){
+  ._font-family-info-blocks-title;
+  background: @info-blocks-vnz-bg-color-distance-learning-title;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-distance-learning-title-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-distance-learning-main-content(){
+  ._font-family-info-blocks-main;
+  background: @info-blocks-vnz-bg-color-distance-learning-main-content;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-distance-learning-main-content-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-partnership-title(){
+  ._font-family-info-blocks-title;
+  background: @info-blocks-vnz-bg-color-partnership-title;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-partnership-title-hover;
+  }
+}
+
+._info-blocks-vnz-bg-color-partnership-main-content(){
+  ._font-family-info-blocks-main;
+  background: @info-blocks-vnz-bg-color-partnership-main-content;
+  &:hover{
+    background: @info-blocks-vnz-bg-color-partnership-main-content-hover;
+  }
+}
+
+//nav vnz
+._nav-about-vnz-hover(){
+  background: @nav-vnz-bg-color-about-vnz;
+  color: @font-color-nav-vnz-about-vnz-hover;
+}
+
+._nav-news-and-events-hover(){
+  background: @nav-vnz-bg-color-news-and-events;
+  color: @font-color-nav-vnz-news-and-events-hover;
+}
+
+._nav-specialty-hover(){
+  background: @nav-vnz-bg-color-specialty;
+  color: @font-color-nav-vnz-specialty-hover;
+}
+
+._nav-for-enrollee-hover(){
+  background: @nav-vnz-bg-color-for-enrollee;
+  color: @font-color-nav-vnz-for-enrollee-hover;
+}
+
+._nav-for-student-hover(){
+  background: @nav-vnz-bg-color-for-student;
+  color: @font-color-nav-vnz-for-student-hover;
+}
+
+._nav-distance-learning-hover(){
+  background: @nav-vnz-bg-color-distance-learning;
+  color: @font-color-nav-vnz-distance-learning-hover;
+}
+
+._nav-partnership-hover(){
+  background: @nav-vnz-bg-color-partnership;
+  color: @font-color-nav-vnz-partnership-hover;
+}
+
+._ib-list() {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -6px;
+}
+//inputs
+._input(@width: auto){
+  padding: 0 10px;
+  width: @width;
+  height: 28px;
+  border: 1px solid @inputs-border-color;
+  color: @inputs-place-holder-color;
+  font: @placeholder-font-size @base-font;
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid @inputs-border-color-hover;
+  }
+}
+
+._btn(submit, @width: auto, @height: auto){
+  display: inline-block;
+  padding-top: 1px;
+  width: @width;
+  height: @height;
+  border: none;
+  background: @button-subscribe-bg-color url("@{path-to-sprite}") no-repeat -109px 0px;
+  &:hover{
+    background: @button-subscribe-bg-color-hover url("@{path-to-sprite}") no-repeat -109px -29px;
+  }
+}
+._btn(show, @mt: 0){
+  margin-top: @mt;
+  text-decoration: none;
+  background: @buttons-show-all-bg-color;
+  display: inline-block;
+  padding: 0 17px 0 10px;
+  ._ib-list;
+  letter-spacing: normal;
+  .show-all-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 27px;
+    height: 28px;
+    background: url("@{path-to-sprite}") no-repeat -82px 0px;
+  }
+  .show-all-text {
+    display: inline-block;
+    color: @font-color-buttons-show-all;
+    font: @font-family-buttons-show-all;
+    line-height: 40px;
+    letter-spacing: normal;
+    vertical-align: middle;
+  }
+  &:hover{
+    background: @buttons-show-all-bg-color-hover;
+    .show-all-icon {
+      background-position: -82px -31px;
+    }
+  }
+}
+
+._btn(search, @width: auto, @height: auto){
+  width: @width;
+  height: @height;
+  border: none;
+  background: url("@{path-to-sprite}") no-repeat -137px 3px;
+  &:hover{
+    background-color: @buttons-show-all-bg-color;
+  }
+}
+
+._nav-dropdown-menu(@width: auto, @background, @background-odd, @background-hover, @background-odd-hover) {
+  .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    overflow: hidden;
+    width: @width;
+    background: @background-odd;
+    ul {
+      li {
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        *display: block;
+        a {
+          ._box-sizing;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+        &.odd {
+          width: 100%;
+          background: @background;
+          &:hover {
+            background: @background-odd-hover;
+          }
+        }
+        &:hover {
+          background: @background-hover;
+        }
+      }
+    }
+  }
+}
+
+._box-sizing() {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+._transition(@transition: all .3s, @transition-timing-function: ease) {
+  -webkit-transition: @transition @transition-timing-function;
+  -moz-transition: @transition @transition-timing-function;
+  -ms-transition: @transition @transition-timing-function;
+  -o-transition: @transition @transition-timing-function;
+  transition: @transition @transition-timing-function;
+}
+
+._opacity(@o: 1) {
+  @ieo: @o*100;
+  opacity: @o;
+  -ms-filter: ~"alpha(opacity=@{ieo})";
+  filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieo})";
+  filter: ~"alpha(opacity=@{ieo})";
+}
