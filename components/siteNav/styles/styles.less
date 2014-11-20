@@ -1,11 +1,11 @@
 .nav-vnz {
-  position: relative;
   display: block;
+  position: relative;
   height: 50px;
-  background: @nav-vnz-bg-color-default-state;
-  letter-spacing: -4px;
   font-size: 0;
   line-height: 0;
+  letter-spacing: -4px;
+  background: @nav-vnz-bg-color-default-state;
   &.active {
     ._transition;
     background: @nav-vnz-bg-color-partnership;
@@ -19,7 +19,7 @@
       background: @nav-vnz-bg-color-default-state;
       &:hover {
         ._nav-about-vnz-hover;
-        ._transition(~"background .3s");
+        ._transition(e("background .3s"));
         .dropdown-menu {
           display: block;
         }
@@ -29,20 +29,20 @@
       background: @nav-vnz-bg-color-default-state;
       &:hover {
         ._nav-specialty-hover;
-        ._transition(~"background .3s");
+        ._transition(e("background .3s"));
         .dropdown-menu {
           display: block;
         }
       }
       .dropdown-menu {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
-        display: none;
         width: 100%;
         height: auto;
-        background: @nav-vnz-bg-color-specialty;
         letter-spacing: normal;
+        background: @nav-vnz-bg-color-specialty;
         .department-holder {
           clear: both;
           overflow: hidden;
@@ -86,27 +86,26 @@
                 display: block;
                 margin: 0;
                 padding: 0 0 0 20px;
-                background: @nav-vnz-bg-color-specialty-odd;
-                color: #fff;
                 font: 24px/50px @segoe-ui-semibold;
+                color: #fff;
+                background: @nav-vnz-bg-color-specialty-odd;
               }
               .office {
                 position: relative;
-                padding: 15px 0 15px 20px;
                 width: 300px;
+                padding: 15px 0 15px 20px;
                 border-bottom: 1px solid #0c8bc3;
                 &.last-item {
                   border-bottom: none;
                 }
                 &:hover {
-                  background: #0c8bc3;
                   cursor: pointer;
+                  background: #0c8bc3;
                   .about-office {
                     display: block;
                   }
                 }
-                &.od
-                 {
+                &.od {
                   border-bottom: none;
                   .about-office {
                     margin-top: -135px;
@@ -115,17 +114,17 @@
                 .title-office {
                   margin: 0;
                   padding: 0;
-                  color: #abd9ed;
                   font: 18px/20px @segoe-ui-semibold;
+                  color: #abd9ed;
                   &.koi {
                     width: 195px;
                   }
                 }
                 .about-office {
+                  display: none;
                   position: absolute;
                   top: 0;
                   left: 100%;
-                  display: none;
                   width: 180px;
                   background: #0c8bc3;
                   ul {
@@ -139,9 +138,9 @@
                       a {
                         display: block;
                         padding: 0 0 0 20px;
-                        color: #abd9ed;
-                        text-transform: none;
                         font: 14px/30px @segoe-ui-semibold;
+                        text-transform: none;
+                        color: #abd9ed;
                       }
                       &:hover {
                         background: #0078ad;
@@ -191,7 +190,7 @@
       background: @nav-vnz-bg-color-default-state;
       &:hover {
         ._nav-for-student-hover;
-        ._transition(~"background .3s");
+        ._transition(e("background .3s"));
         .dropdown-menu {
           display: block;
         }
@@ -206,7 +205,7 @@
       }
       &:hover {
         ._nav-partnership-hover;
-        ._transition(~"background .3s");
+        ._transition(e("background .3s"));
         .dropdown-menu {
           display: block;
         }
@@ -219,7 +218,7 @@
         position: relative;
         &:hover {
           ._nav-news-and-events-hover;
-          ._transition(~"background .3s");
+          ._transition(e("background .3s"));
           .dropdown-menu {
             display: block;
           }
@@ -230,7 +229,7 @@
         position: relative;
         &:hover {
           ._nav-for-enrollee-hover;
-          ._transition(~"background .3s");
+          ._transition(e("background .3s"));
           .dropdown-menu {
             display: block;
           }
@@ -241,7 +240,7 @@
         position: relative;
         &:hover {
           ._nav-distance-learning-hover;
-          ._transition(~"background .3s");
+          ._transition(e("background .3s"));
           .dropdown-menu {
             display: block;
           }
@@ -252,10 +251,10 @@
       ._font-family-nav-vnz;
       display: inline-block;
       padding: 0 17px;
-      text-decoration: none;
-      letter-spacing: normal;
       line-height: 50px;
       cursor: pointer;
+      text-decoration: none;
+      letter-spacing: normal;
     }
   }
 }

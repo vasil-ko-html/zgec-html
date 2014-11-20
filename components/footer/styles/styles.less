@@ -1,12 +1,12 @@
 footer {
   clear: both;
-  margin-top: 38px;
   overflow: hidden;
+  margin-top: 38px;
   .footer-nav {
-    margin-bottom: -4px;
-    padding: 22px 30px 29px;
     width: 100%;
     height: 240px;
+    margin-bottom: -4px;
+    padding: 22px 30px 29px;
     background: @footer-bg-color;
     .footer-nav-vnz {
       .level1 {
@@ -16,9 +16,9 @@ footer {
           margin-bottom: 9px;
         }
       }
-      ul>li {
+      ul > li {
         display: inline-block;
-        .level2 ul>li {
+        .level2 ul > li {
           display: block;
           a {
             ._font-family-footer-nav-level2;
@@ -34,7 +34,7 @@ footer {
     clear: both;
     margin-bottom: 25px;
     padding: 25px 30px;
-    ul>li {
+    ul > li {
       ._font-family-footer-copyright;
       display: inline-block;
       float: left;
@@ -44,8 +44,8 @@ footer {
       .copyright-vnz,
       .developers {
         a {
-          color: @font-color-links;
           text-decoration: none;
+          color: @font-color-links;
           &:hover {
             text-decoration: underline;
           }
@@ -57,27 +57,28 @@ footer {
       }
       .social-share {
         margin: 5px 90px 0 0;
-        .vk-vnz, .fb-vnz {
+        .vk-vnz,
+        .fb-vnz {
           width: 30px;
-          color: @body-color;
+          line-height: 30px;
           text-align: center;
           text-transform: uppercase;
-          line-height: 30px;
+          color: @body-color;
         }
       }
       .vk-vnz {
         float: left;
-        background: @vk-bg url("@{path-to-sprite}") no-repeat -178px 3px;
         text-indent: -9999px;
+        background: @vk-bg url("@{path-to-sprite}") no-repeat -178px 3px;
         &:hover {
           background-color: @vk-bg-hover;
         }
       }
       .fb-vnz {
         margin-left: 35px;
-        background: @fb-bg url("@{path-to-sprite}") no-repeat -205px 3px;
         text-indent: -9999px;
-        &:hover{
+        background: @fb-bg url("@{path-to-sprite}") no-repeat -205px 3px;
+        &:hover {
           background-color: @fb-bg-hover;
         }
       }

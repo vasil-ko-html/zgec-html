@@ -10,12 +10,12 @@
 @height-slider-status-line: 90px;
 
 //paths
-@path-to-img: ~"../images/";
-@path-to-fonts: ~"../fonts/";
-@path-to-sprite: ~"@{path-to-img}sprite.png";
+@path-to-img: e("../images/");
+@path-to-fonts: e("../fonts/");
+@path-to-sprite: e("@{path-to-img}sprite.png");
 
 //color
-@body-color: #ffffff;
+@body-color: #fff;
 //nav
 @nav-vnz-bg-color-default-state: #323a45;
 @nav-vnz-bg-color-default-state-odd: #3d4754;
@@ -77,7 +77,7 @@
 
 //arrows and buttons hover
 @slider-arrows-bg-color-hover: #d8d8d8;
-@slider-arrows-color-hover: #ffffff;
+@slider-arrows-color-hover: #fff;
 @buttons-show-all-bg-color-hover: #d8d8d8;
 @button-subscribe-bg-color-hover: #549917;
 
@@ -94,7 +94,7 @@
 
 //fonts color
 @font-color-h1-h2-h3: #404040;
-@font-color-h4-h5: #ffffff;
+@font-color-h4-h5: #fff;
 @font-color-last-news: #086690;
 @font-color-interesting-events: #086690;
 @font-color-last-news-info-line: #909090;
@@ -126,50 +126,50 @@
 @fb-bg-hover: #4462a8;
 
 //@font-face fonts name
-@pf-beausans-pro-regular: ~"pf_beausans_proregular";
-@pf-beausans-pro-semibold: ~"pf_beausans_pro_semibold";
-@segoe-ui-regular: ~"segoe_ui_regular";
-@segoe-ui-semibold: ~"segoe_ui_semibold";
-@segoe-ui-light: ~"segoe_ui_light";
-@myriadpro-regular: ~"myriad_pro_regular";
-@base-font: ~"Arial, Helvetica, sans-serif";
+@pf-beausans-pro-regular: e("pf_beausans_proregular");
+@pf-beausans-pro-semibold: e("pf_beausans_pro_semibold");
+@segoe-ui-regular: e("segoe_ui_regular");
+@segoe-ui-semibold: e("segoe_ui_semibold");
+@segoe-ui-light: e("segoe_ui_light");
+@myriadpro-regular: e("myriad_pro_regular");
+@base-font: e("Arial, Helvetica, sans-serif");
 
 //fonts size
-@base-font-size: ~"16px/22px";
-@last-news-interesting-events-info-line-font-size: ~"14px/16px";
-@interesting-events-date-font-size: ~"16px/16px";
-@footer-nav-level2-font-size: ~"14px/25px";
-@placeholder-font-size: ~"14px/28px";
-@link-font-size: ~"14px";
-@short-text-news-events-font-size: ~"14px/18px";
-@pagination-font-size: ~"24px/35px";
+@base-font-size: e("16px/22px");
+@last-news-interesting-events-info-line-font-size: e("14px/16px");
+@interesting-events-date-font-size: e("16px/16px");
+@footer-nav-level2-font-size: e("14px/25px");
+@placeholder-font-size: e("14px/28px");
+@link-font-size: e("14px");
+@short-text-news-events-font-size: e("14px/18px");
+@pagination-font-size: e("24px/35px");
 
-@h1-size: ~"42px/55px";
-@h2-size: ~"30px";
-@h3-size: ~"18px";
-@h4-size: ~"16px";
-@h5-size: ~"14px";
+@h1-size: e("42px/55px");
+@h2-size: e("30px");
+@h3-size: e("18px");
+@h4-size: e("16px");
+@h5-size: e("14px");
 
 //font family
-@font-family-base: ~"@{base-font-size} @{base-font}";
+@font-family-base: e("@{base-font-size} @{base-font}");
 
-@font-family-h1: ~"@{h1-size} @{pf-beausans-pro-regular}";
-@font-family-h2: ~"@{h2-size} @{pf-beausans-pro-regular}";
-@font-family-h3: ~"@{h3-size} @{segoe-ui-regular}";
-@font-family-h4: ~"@{h4-size} @{segoe-ui-semibold}";
-@font-family-h5: ~"@{h5-size} @{segoe-ui-semibold}";
+@font-family-h1: e("@{h1-size} @{pf-beausans-pro-regular}");
+@font-family-h2: e("@{h2-size} @{pf-beausans-pro-regular}");
+@font-family-h3: e("@{h3-size} @{segoe-ui-regular}");
+@font-family-h4: e("@{h4-size} @{segoe-ui-semibold}");
+@font-family-h5: e("@{h5-size} @{segoe-ui-semibold}");
 
-@font-family-info-blocks-title: ~"16px/16px @{pf-beausans-pro-semibold}";
-@font-family-info-blocks-main: ~"20px/25px @{segoe-ui-regular}";
+@font-family-info-blocks-title: e("16px/16px @{pf-beausans-pro-semibold}");
+@font-family-info-blocks-main: e("20px/25px @{segoe-ui-regular}");
 
-@font-family-events-date: ~"italic @{interesting-events-date-font-size} @{base-font}";
-@font-family-last-news-interesting-events-info-line: ~"italic @{last-news-interesting-events-info-line-font-size} @{base-font}";
+@font-family-events-date: e("italic @{interesting-events-date-font-size} @{base-font}");
+@font-family-last-news-interesting-events-info-line: e("italic @{last-news-interesting-events-info-line-font-size} @{base-font}");
 
-@font-family-buttons-show-all: ~"16px @{pf-beausans-pro-regular}";
-@font-family-placeholder: ~"@{placeholder-font-size} @{base-font}";
-@font-family-link: ~"@{link-font-size} @{base-font}";
-@font-family-footer-nav-level2: ~"@{footer-nav-level2-font-size} @{base-font}";
-@font-family-footer-copyright: ~"@{link-font-size} @{base-font}";
-@font-family-short-text-news-events: ~"@{short-text-news-events-font-size} @{base-font}";
-@font-family-pagination: ~"@{pagination-font-size} @{myriadpro-regular}";
-@font-family-pagination-active-page: ~"@{pagination-font-size} @{myriadpro-regular}, sans-serif";
+@font-family-buttons-show-all: e("16px @{pf-beausans-pro-regular}");
+@font-family-placeholder: e("@{placeholder-font-size} @{base-font}");
+@font-family-link: e("@{link-font-size} @{base-font}");
+@font-family-footer-nav-level2: e("@{footer-nav-level2-font-size} @{base-font}");
+@font-family-footer-copyright: e("@{link-font-size} @{base-font}");
+@font-family-short-text-news-events: e("@{short-text-news-events-font-size} @{base-font}");
+@font-family-pagination: e("@{pagination-font-size} @{myriadpro-regular}");
+@font-family-pagination-active-page: e("@{pagination-font-size} @{myriadpro-regular}, sans-serif");

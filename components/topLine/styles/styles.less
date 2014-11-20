@@ -1,68 +1,70 @@
 .main-vnz {
-  margin-bottom: 21px;
-  *margin-bottom: 21px;
   zoom: 1;
   position: relative;
   z-index: 100;
+  margin-bottom: 21px;
+
+  *margin-bottom: 21px;
   .action-bar {
-    width: 282px;
     float: right;
-    .social-share{
+    width: 282px;
+    .social-share {
       float: right;
       margin: 11px 0 9px;
       .vk-vnz,
       .fb-vnz {
-        color: @body-color;
-        text-transform: uppercase;
         width: 30px;
-        text-align: center;
         line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: @body-color;
       }
       .vk-vnz {
         float: left;
-        background: @vk-bg url("@{path-to-sprite}") no-repeat -178px 3px;
         text-indent: -9999px;
+        background: @vk-bg url("@{path-to-sprite}") no-repeat -178px 3px;
         &:hover {
           background-color: @vk-bg-hover;
         }
       }
       .fb-vnz {
         margin-left: 35px;
-        background: @fb-bg url("@{path-to-sprite}") no-repeat -205px 3px;
         text-indent: -9999px;
+        background: @fb-bg url("@{path-to-sprite}") no-repeat -205px 3px;
         &:hover {
           background-color: @fb-bg-hover;
         }
       }
     }
     .search-line {
-      height: 30px;
       position: absolute;
       bottom: 0;
+      height: 30px;
       input[name="search"] {
         ._input(245px);
-        padding-right: 25px;
         position: relative;
+        padding-right: 25px;
       }
       button[name="submit"] {
         ._btn(search, 28px, 28px);
         position: absolute;
+        right: 1px;
+        bottom: 1px;
+
         *margin-top: 1px;
         *top: 1px;
-        bottom: 1px;
-        right: 1px;
       }
     }
   }
-	.name-vnz {
-		.title-vnz {
+  .name-vnz {
+    .title-vnz {
       a {
         ._h1;
         text-decoration: none;
       }
-		}
-		.description-vnz {
-			._h3;
-		}
-	}
+    }
+    .description-vnz {
+      ._h3;
+    }
+  }
 }

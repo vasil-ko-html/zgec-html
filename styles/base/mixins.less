@@ -1,261 +1,261 @@
-._body(){
-  background: @body-color;
+._body() {
   font: @font-family-base;
+  background: @body-color;
 }
 
-._h1(){
-  color: @font-color-h1-h2-h3;
-  text-transform: uppercase;
+._h1() {
   font: @font-family-h1;
   font-smooth: always;
+  text-transform: uppercase;
+  color: @font-color-h1-h2-h3;
 }
 
-._h2(){
-  color: @font-color-h1-h2-h3;
+._h2() {
   font: @font-family-h2;
-}
-
-._h3(){
   color: @font-color-h1-h2-h3;
+}
+
+._h3() {
   font: @font-family-h3;
+  color: @font-color-h1-h2-h3;
 }
 
-._h4(){
-  color: @font-color-h4-h5;
+._h4() {
   font: @font-family-h4;
-}
-
-._h5(){
   color: @font-color-h4-h5;
-  font: @font-family-h5;
 }
 
-._font-family-nav-vnz(){
+._h5() {
+  font: @font-family-h5;
+  color: @font-color-h4-h5;
+}
+
+._font-family-nav-vnz() {
   ._h5;
   text-transform: uppercase;
 }
 
-._font-family-info-blocks-title(){
-  color: @body-color;
-  text-transform: uppercase;
+._font-family-info-blocks-title() {
   font: @font-family-info-blocks-title;
-}
-
-._font-family-info-blocks-main(){
+  text-transform: uppercase;
   color: @body-color;
+}
+
+._font-family-info-blocks-main() {
   font: @font-family-info-blocks-main;
+  color: @body-color;
 }
 
-._font-family-news-and-events(){
-  color: @font-color-last-news;
+._font-family-news-and-events() {
   font: @font-family-base;
+  color: @font-color-last-news;
 }
 
-._font-family-events-date(){
-  color: @font-color-interesting-events-date;
+._font-family-events-date() {
   font: @font-family-events-date;
+  color: @font-color-interesting-events-date;
 }
 
-._font-family-news-and-events-info-line(){
+._font-family-news-and-events-info-line() {
+  font: @font-family-last-news-interesting-events-info-line;
   color: @font-color-last-news-info-line;
-  font: @font-family-last-news-interesting-events-info-line;
 }
 
-._font-family-last-news-interesting-events-info-line(){
-  color: @font-color-interesting-events-info-line;
+._font-family-last-news-interesting-events-info-line() {
   font: @font-family-last-news-interesting-events-info-line;
+  color: @font-color-interesting-events-info-line;
 }
 
-._font-family-buttons-show-all(){
-  color: @font-color-interesting-events-info-line;
+._font-family-buttons-show-all() {
   font: @font-family-buttons-show-all;
+  color: @font-color-interesting-events-info-line;
 }
 
-._font-family-placeholder(){
-  color: @font-color-placeholder;
+._font-family-placeholder() {
   font: @font-family-placeholder;
+  color: @font-color-placeholder;
 }
 
-._font-family-link(){
-  color: @font-color-links;
+._font-family-link() {
   font: @font-family-link;
-  &:hover{
+  color: @font-color-links;
+  &:hover {
     text-decoration: none;
   }
 }
 
-._font-family-footer-nav-level1(){
-  color: @font-color-footer-nav-level1;
-  text-transform: uppercase;
+._font-family-footer-nav-level1() {
   font: @font-family-h5;
+  text-transform: uppercase;
+  color: @font-color-footer-nav-level1;
 }
 
-._font-family-footer-nav-level2(){
-  color: @font-color-footer-nav-level2;
-  text-decoration: none;
+._font-family-footer-nav-level2() {
   font: @font-family-footer-nav-level2;
-  &:hover{
+  text-decoration: none;
+  color: @font-color-footer-nav-level2;
+  &:hover {
     text-decoration: underline;
   }
 }
 
-._font-family-footer-copyright(){
-  color: @font-color-footer-nav-level2;
+._font-family-footer-copyright() {
   font: @font-family-footer-copyright;
+  color: @font-color-footer-nav-level2;
 }
 
-._font-family-short-text-news-events(){
-  color: @font-color-short-text-news-events;
+._font-family-short-text-news-events() {
   font: @font-family-short-text-news-events;
+  color: @font-color-short-text-news-events;
 }
 
 //info blocks
-._info-blocks-vnz-bg-color-about-vnz-title(){
+._info-blocks-vnz-bg-color-about-vnz-title() {
   ._font-family-info-blocks-title;
   background: @info-blocks-vnz-bg-color-about-vnz-title;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-about-vnz-title-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-about-vnz-main-content(){
+._info-blocks-vnz-bg-color-about-vnz-main-content() {
   ._font-family-info-blocks-main;
   background: @info-blocks-vnz-bg-color-about-vnz-main-content;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-about-vnz-main-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-news-and-events-title(){
+._info-blocks-vnz-bg-color-news-and-events-title() {
   ._font-family-info-blocks-title;
   background: @info-blocks-vnz-bg-color-news-and-events-title;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-news-and-events-title-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-news-and-events-main-content(){
+._info-blocks-vnz-bg-color-news-and-events-main-content() {
   ._font-family-info-blocks-main;
   background: @info-blocks-vnz-bg-color-news-and-events-main-content;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-news-and-events-main-content-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-specialty-title(){
+._info-blocks-vnz-bg-color-specialty-title() {
   ._font-family-info-blocks-title;
   background: @info-blocks-vnz-bg-color-specialty-title;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-specialty-title-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-specialty-main-content(){
+._info-blocks-vnz-bg-color-specialty-main-content() {
   ._font-family-info-blocks-main;
   background: @info-blocks-vnz-bg-color-specialty-main-content;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-specialty-main-conten-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-for-enrollee-title(){
+._info-blocks-vnz-bg-color-for-enrollee-title() {
   ._font-family-info-blocks-title;
   background: @info-blocks-vnz-bg-color-for-enrollee-title;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-for-enrollee-title-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-for-enrollee-main-content(){
+._info-blocks-vnz-bg-color-for-enrollee-main-content() {
   ._font-family-info-blocks-main;
   background: @info-blocks-vnz-bg-color-for-enrollee-main-content;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-for-enrollee-main-content-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-for-student-title(){
+._info-blocks-vnz-bg-color-for-student-title() {
   ._font-family-info-blocks-title;
   background: @info-blocks-vnz-bg-color-for-student-title;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-for-student-title-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-for-student-main-content(){
+._info-blocks-vnz-bg-color-for-student-main-content() {
   ._font-family-info-blocks-main;
   background: @info-blocks-vnz-bg-color-for-student-main-content;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-for-student-main-content-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-distance-learning-title(){
+._info-blocks-vnz-bg-color-distance-learning-title() {
   ._font-family-info-blocks-title;
   background: @info-blocks-vnz-bg-color-distance-learning-title;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-distance-learning-title-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-distance-learning-main-content(){
+._info-blocks-vnz-bg-color-distance-learning-main-content() {
   ._font-family-info-blocks-main;
   background: @info-blocks-vnz-bg-color-distance-learning-main-content;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-distance-learning-main-content-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-partnership-title(){
+._info-blocks-vnz-bg-color-partnership-title() {
   ._font-family-info-blocks-title;
   background: @info-blocks-vnz-bg-color-partnership-title;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-partnership-title-hover;
   }
 }
 
-._info-blocks-vnz-bg-color-partnership-main-content(){
+._info-blocks-vnz-bg-color-partnership-main-content() {
   ._font-family-info-blocks-main;
   background: @info-blocks-vnz-bg-color-partnership-main-content;
-  &:hover{
+  &:hover {
     background: @info-blocks-vnz-bg-color-partnership-main-content-hover;
   }
 }
 
 //nav vnz
-._nav-about-vnz-hover(){
-  background: @nav-vnz-bg-color-about-vnz;
+._nav-about-vnz-hover() {
   color: @font-color-nav-vnz-about-vnz-hover;
+  background: @nav-vnz-bg-color-about-vnz;
 }
 
-._nav-news-and-events-hover(){
-  background: @nav-vnz-bg-color-news-and-events;
+._nav-news-and-events-hover() {
   color: @font-color-nav-vnz-news-and-events-hover;
+  background: @nav-vnz-bg-color-news-and-events;
 }
 
-._nav-specialty-hover(){
-  background: @nav-vnz-bg-color-specialty;
+._nav-specialty-hover() {
   color: @font-color-nav-vnz-specialty-hover;
+  background: @nav-vnz-bg-color-specialty;
 }
 
-._nav-for-enrollee-hover(){
-  background: @nav-vnz-bg-color-for-enrollee;
+._nav-for-enrollee-hover() {
   color: @font-color-nav-vnz-for-enrollee-hover;
+  background: @nav-vnz-bg-color-for-enrollee;
 }
 
-._nav-for-student-hover(){
-  background: @nav-vnz-bg-color-for-student;
+._nav-for-student-hover() {
   color: @font-color-nav-vnz-for-student-hover;
+  background: @nav-vnz-bg-color-for-student;
 }
 
-._nav-distance-learning-hover(){
-  background: @nav-vnz-bg-color-distance-learning;
+._nav-distance-learning-hover() {
   color: @font-color-nav-vnz-distance-learning-hover;
+  background: @nav-vnz-bg-color-distance-learning;
 }
 
-._nav-partnership-hover(){
-  background: @nav-vnz-bg-color-partnership;
+._nav-partnership-hover() {
   color: @font-color-nav-vnz-partnership-hover;
+  background: @nav-vnz-bg-color-partnership;
 }
 
 ._ib-list() {
@@ -264,13 +264,13 @@
   letter-spacing: -6px;
 }
 //inputs
-._input(@width: auto){
-  padding: 0 10px;
+._input(@width: auto) {
   width: @width;
   height: 28px;
-  border: 1px solid @inputs-border-color;
-  color: @inputs-place-holder-color;
+  padding: 0 10px;
   font: @placeholder-font-size @base-font;
+  color: @inputs-place-holder-color;
+  border: 1px solid @inputs-border-color;
   &:hover,
   &:active,
   &:focus {
@@ -278,42 +278,42 @@
   }
 }
 
-._btn(submit, @width: auto, @height: auto){
+._btn(submit, @width: auto, @height: auto) {
   display: inline-block;
-  padding-top: 1px;
   width: @width;
   height: @height;
+  padding-top: 1px;
   border: none;
-  background: @button-subscribe-bg-color url("@{path-to-sprite}") no-repeat -109px 0px;
-  &:hover{
+  background: @button-subscribe-bg-color url("@{path-to-sprite}") no-repeat -109px 0;
+  &:hover {
     background: @button-subscribe-bg-color-hover url("@{path-to-sprite}") no-repeat -109px -29px;
   }
 }
-._btn(show, @mt: 0){
-  margin-top: @mt;
-  text-decoration: none;
-  background: @buttons-show-all-bg-color;
-  display: inline-block;
-  padding: 0 17px 0 10px;
+._btn(show, @mt: 0) {
   ._ib-list;
+  display: inline-block;
+  margin-top: @mt;
+  padding: 0 17px 0 10px;
+  text-decoration: none;
   letter-spacing: normal;
+  background: @buttons-show-all-bg-color;
   .show-all-icon {
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
     width: 27px;
     height: 28px;
-    background: url("@{path-to-sprite}") no-repeat -82px 0px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url("@{path-to-sprite}") no-repeat -82px 0;
   }
   .show-all-text {
     display: inline-block;
-    color: @font-color-buttons-show-all;
     font: @font-family-buttons-show-all;
     line-height: 40px;
-    letter-spacing: normal;
     vertical-align: middle;
+    letter-spacing: normal;
+    color: @font-color-buttons-show-all;
   }
-  &:hover{
+  &:hover {
     background: @buttons-show-all-bg-color-hover;
     .show-all-icon {
       background-position: -82px -31px;
@@ -321,23 +321,23 @@
   }
 }
 
-._btn(search, @width: auto, @height: auto){
+._btn(search, @width: auto, @height: auto) {
   width: @width;
   height: @height;
   border: none;
   background: url("@{path-to-sprite}") no-repeat -137px 3px;
-  &:hover{
+  &:hover {
     background-color: @buttons-show-all-bg-color;
   }
 }
 
 ._nav-dropdown-menu(@width: auto, @background, @background-odd, @background-hover, @background-odd-hover) {
   .dropdown-menu {
+    display: none;
+    overflow: hidden;
     position: absolute;
     top: 50px;
     left: 0;
-    display: none;
-    overflow: hidden;
     width: @width;
     background: @background-odd;
     ul {
@@ -346,6 +346,7 @@
         overflow: hidden;
         width: 100%;
         white-space: nowrap;
+
         *display: block;
         a {
           ._box-sizing;
@@ -385,6 +386,7 @@
 ._opacity(@o: 1) {
   @ieo: @o*100;
   opacity: @o;
+
   -ms-filter: ~"alpha(opacity=@{ieo})";
   filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieo})";
   filter: ~"alpha(opacity=@{ieo})";

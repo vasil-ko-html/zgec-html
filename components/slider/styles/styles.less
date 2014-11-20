@@ -1,17 +1,17 @@
 .slider-vnz {
+  overflow: hidden;
   position: relative;
   z-index: 100!important;
   width: @width-slider;
   height: 410px;
-  overflow: hidden;
   .content {
     width: 10000px;
     height: 410px;
     .item {
+      display: inline-block;
+      float: left;
       width: 710px;
       height: 410px;
-      float: left;
-      display: inline-block;
       .item-link {
         display: block;
         width: 100%;
@@ -26,42 +26,42 @@
       }
       .info-line {
         clear: both;
-        margin: 0 auto;
         width: @width-slider-status-line;
         height: 90px;
+        margin: 0 auto;
         line-height: 90px;
         .il-content {
-          letter-spacing: -4px;
           font-size: 0;
           line-height: 0;
+          letter-spacing: -4px;
           .il-title-holder {
             ._font-family-info-blocks-main;
             display: inline-block;
-            padding: 10px;
             width: 150px;
             height: 70px;
+            padding: 10px;
             vertical-align: top;
             .il-title {
               display: inline-block;
-              vertical-align: top;
-              text-transform: uppercase;
-              letter-spacing: normal;
               line-height: 16px;
+              vertical-align: top;
+              letter-spacing: normal;
+              text-transform: uppercase;
             }
             .il-icon {
               display: block;
-              margin-bottom: 8px;
               width: 26px;
               height: 26px;
+              margin-bottom: 8px;
               background: url("@{path-to-sprite}") no-repeat;
             }
           }
           .il-link {
             ._font-family-info-blocks-main;
             display: inline-block;
-            padding: 15px 20px;
             width: 360px;
             height: 60px;
+            padding: 15px 20px;
             vertical-align: middle;
             text-decoration: none;
             letter-spacing: normal;
@@ -247,7 +247,7 @@
     right: 0;
     background: @slider-arrows-bg-color url("@{path-to-sprite}") no-repeat -76px -170px;
     &:hover {
-      ._transition(background-color 0.3s, ease-out);
+      ._transition(background-color .3s, ease-out);
       background-color: @slider-arrows-bg-color-hover;
       background-position: -76px -237px;
     }
@@ -256,7 +256,7 @@
     left: 0;
     background: @slider-arrows-bg-color url("@{path-to-sprite}") no-repeat 13px -170px;
     &:hover {
-      ._transition(background-color 0.3s, ease-out);
+      ._transition(background-color .3s, ease-out);
       background-color: @slider-arrows-bg-color-hover;
       background-position: 13px -236px;
     }
