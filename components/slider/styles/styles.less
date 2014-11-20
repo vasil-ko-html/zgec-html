@@ -1,0 +1,264 @@
+.slider-vnz {
+  position: relative;
+  z-index: 100!important;
+  width: @width-slider;
+  height: 410px;
+  overflow: hidden;
+  .content {
+    width: 10000px;
+    height: 410px;
+    .item {
+      width: 710px;
+      height: 410px;
+      float: left;
+      display: inline-block;
+      .item-link {
+        display: block;
+        width: 100%;
+        height: 320px;
+        .image {
+          display: block;
+          clear: both;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+      .info-line {
+        clear: both;
+        margin: 0 auto;
+        width: @width-slider-status-line;
+        height: 90px;
+        line-height: 90px;
+        .il-content {
+          letter-spacing: -4px;
+          font-size: 0;
+          line-height: 0;
+          .il-title-holder {
+            ._font-family-info-blocks-main;
+            display: inline-block;
+            padding: 10px;
+            width: 150px;
+            height: 70px;
+            vertical-align: top;
+            .il-title {
+              display: inline-block;
+              vertical-align: top;
+              text-transform: uppercase;
+              letter-spacing: normal;
+              line-height: 16px;
+            }
+            .il-icon {
+              display: block;
+              margin-bottom: 8px;
+              width: 26px;
+              height: 26px;
+              background: url("@{path-to-sprite}") no-repeat;
+            }
+          }
+          .il-link {
+            ._font-family-info-blocks-main;
+            display: inline-block;
+            padding: 15px 20px;
+            width: 360px;
+            height: 60px;
+            vertical-align: middle;
+            text-decoration: none;
+            letter-spacing: normal;
+          }
+        }
+        &.about-vnz {
+          .il-content {
+            .il-title-holder {
+              background: @info-blocks-vnz-bg-color-about-vnz-title;
+              .il-icon {
+                background-position: -1px -60px;
+              }
+            }
+            .il-link {
+              background: @info-blocks-vnz-bg-color-about-vnz-main-content;
+            }
+          }
+        }
+        &.news-and-events {
+          .il-content {
+            .il-title-holder {
+              background: @info-blocks-vnz-bg-color-news-and-events-title;
+              .il-icon {
+                background-position: -29px -60px;
+              }
+            }
+            .il-link {
+              background: @info-blocks-vnz-bg-color-news-and-events-main-content;
+            }
+          }
+        }
+        &.specialty {
+          .il-content {
+            .il-title-holder {
+              background: @info-blocks-vnz-bg-color-specialty-title;
+              .il-icon {
+                background-position: -57px -60px;
+              }
+            }
+            .il-link {
+              background: @info-blocks-vnz-bg-color-specialty-main-content;
+            }
+          }
+        }
+        &.for-enrollee {
+          .il-content {
+            .il-title-holder {
+              background: @info-blocks-vnz-bg-color-for-enrollee-title;
+              .il-icon {
+                background-position: -85px -60px;
+              }
+            }
+            .il-link {
+              background: @info-blocks-vnz-bg-color-for-enrollee-main-content;
+            }
+          }
+        }
+        &.for-student {
+          .il-content {
+            .il-title-holder {
+              background: @info-blocks-vnz-bg-color-for-student-title;
+              .il-icon {
+                background-position: -113px -60px;
+              }
+            }
+            .il-link {
+              background: @info-blocks-vnz-bg-color-for-student-main-content;
+            }
+          }
+        }
+        &.distance-learning {
+          .il-content {
+            .il-title-holder {
+              background: @info-blocks-vnz-bg-color-distance-learning-title;
+              .il-icon {
+                background-position: -141px -60px;
+              }
+            }
+            .il-link {
+              background: @info-blocks-vnz-bg-color-distance-learning-main-content;
+            }
+          }
+        }
+        &.partnership {
+          .il-content {
+            .il-title-holder {
+              background: @info-blocks-vnz-bg-color-partnership-title;
+              .il-icon {
+                background-position: -168px -60px;
+              }
+            }
+            .il-link {
+              background: @info-blocks-vnz-bg-color-partnership-main-content;
+            }
+          }
+        }
+        &:hover {
+          &.about-vnz {
+            .il-content {
+              .il-title-holder {
+                background: @info-blocks-vnz-bg-color-about-vnz-title-hover;
+              }
+              .il-link {
+                background: @info-blocks-vnz-bg-color-about-vnz-main-content-hover;
+              }
+            }
+          }
+          &.news-and-events {
+            .il-content {
+              .il-title-holder {
+                background: @info-blocks-vnz-bg-color-news-and-events-title-hover;
+              }
+              .il-link {
+                background: @info-blocks-vnz-bg-color-news-and-events-main-content-hover;
+              }
+            }
+          }
+          &.specialty {
+            .il-content {
+              .il-title-holder {
+                background: @info-blocks-vnz-bg-color-specialty-title-hover;
+              }
+              .il-link {
+                background: @info-blocks-vnz-bg-color-specialty-main-content-hover;
+              }
+            }
+          }
+          &.for-enrollee {
+            .il-content {
+              .il-title-holder {
+                background: @info-blocks-vnz-bg-color-for-enrollee-title-hover;
+              }
+              .il-link {
+                background: @info-blocks-vnz-bg-color-for-enrollee-main-content-hover;
+              }
+            }
+          }
+          &.for-student {
+            .il-content {
+              .il-title-holder {
+                background: @info-blocks-vnz-bg-color-for-student-title-hover;
+              }
+              .il-link {
+                background: @info-blocks-vnz-bg-color-for-student-main-content-hover;
+              }
+            }
+          }
+          &.distance-learning {
+            .il-content {
+              .il-title-holder {
+                background: @info-blocks-vnz-bg-color-distance-learning-title-hover;
+              }
+              .il-link {
+                background: @info-blocks-vnz-bg-color-distance-learning-main-content-hover;
+              }
+            }
+          }
+          &.partnership {
+            .il-content {
+              .il-title-holder {
+                background: @info-blocks-vnz-color-partnership-title-hover;
+              }
+              .il-link {
+                background: @info-blocks-vnz-color-partnership-main-content-hover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .next,
+  .prev {
+    position: absolute;
+    top: 320px;
+    width: @width-slider-arrows;
+    height: @height-slider-status-line;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .next {
+    right: 0;
+    background: @slider-arrows-bg-color url("@{path-to-sprite}") no-repeat -76px -170px;
+    &:hover {
+      ._transition(background-color 0.3s, ease-out);
+      background-color: @slider-arrows-bg-color-hover;
+      background-position: -76px -237px;
+    }
+  }
+  .prev {
+    left: 0;
+    background: @slider-arrows-bg-color url("@{path-to-sprite}") no-repeat 13px -170px;
+    &:hover {
+      ._transition(background-color 0.3s, ease-out);
+      background-color: @slider-arrows-bg-color-hover;
+      background-position: 13px -236px;
+    }
+  }
+}

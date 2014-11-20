@@ -1,0 +1,261 @@
+.nav-vnz {
+  position: relative;
+  display: block;
+  height: 50px;
+  background: @nav-vnz-bg-color-default-state;
+  letter-spacing: -4px;
+  font-size: 0;
+  line-height: 0;
+  &.active {
+    ._transition;
+    background: @nav-vnz-bg-color-partnership;
+  }
+  li {
+    display: inline-block;
+    float: left;
+    &.about-vnz {
+      ._nav-dropdown-menu(250px, @nav-vnz-bg-color-about-vnz, @nav-vnz-bg-color-about-vnz-odd, @info-blocks-vnz-bg-color-about-vnz-main-content-hover, @info-blocks-vnz-bg-color-about-vnz-title-hover);
+      position: relative;
+      background: @nav-vnz-bg-color-default-state;
+      &:hover {
+        ._nav-about-vnz-hover;
+        ._transition(~"background .3s");
+        .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+    &.specialty {
+      background: @nav-vnz-bg-color-default-state;
+      &:hover {
+        ._nav-specialty-hover;
+        ._transition(~"background .3s");
+        .dropdown-menu {
+          display: block;
+        }
+      }
+      .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: auto;
+        background: @nav-vnz-bg-color-specialty;
+        letter-spacing: normal;
+        .department-holder {
+          clear: both;
+          overflow: hidden;
+          background: @nav-vnz-bg-color-specialty;
+          .left-c {
+            float: left;
+          }
+          .right-c {
+            float: right;
+          }
+          .left-c,
+          .right-c {
+            width: 50%;
+            .department {
+              .office {
+                &.last-item {
+                  padding-bottom: 40px;
+                  .about-office {
+                    margin-top: -91px!important;
+                    ul {
+                      li {
+                        &.last-item-li {
+                          border-bottom: 1px solid #0c8bc3!important;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              &.top {
+                .office {
+                  &.last-item {
+                    padding-bottom: 40px;
+                    .about-office {
+                      margin-top: -90px;
+                    }
+                  }
+                }
+              }
+              .department-title {
+                display: block;
+                margin: 0;
+                padding: 0 0 0 20px;
+                background: @nav-vnz-bg-color-specialty-odd;
+                color: #fff;
+                font: 24px/50px @segoe-ui-semibold;
+              }
+              .office {
+                position: relative;
+                padding: 15px 0 15px 20px;
+                width: 300px;
+                border-bottom: 1px solid #0c8bc3;
+                &.last-item {
+                  border-bottom: none;
+                }
+                &:hover {
+                  background: #0c8bc3;
+                  cursor: pointer;
+                  .about-office {
+                    display: block;
+                  }
+                }
+                &.od
+                 {
+                  border-bottom: none;
+                  .about-office {
+                    margin-top: -135px;
+                  }
+                }
+                .title-office {
+                  margin: 0;
+                  padding: 0;
+                  color: #abd9ed;
+                  font: 18px/20px @segoe-ui-semibold;
+                  &.koi {
+                    width: 195px;
+                  }
+                }
+                .about-office {
+                  position: absolute;
+                  top: 0;
+                  left: 100%;
+                  display: none;
+                  width: 180px;
+                  background: #0c8bc3;
+                  ul {
+                    li {
+                      display: block;
+                      width: 100%;
+                      border-bottom: 1px solid #0078ad;
+                      &.last-item-li {
+                        border-bottom: none;
+                      }
+                      a {
+                        display: block;
+                        padding: 0 0 0 20px;
+                        color: #abd9ed;
+                        text-transform: none;
+                        font: 14px/30px @segoe-ui-semibold;
+                      }
+                      &:hover {
+                        background: #0078ad;
+                      }
+                    }
+                  }
+                  &.active {
+                    display: block;
+                  }
+                }
+              }
+              &.bottom {
+                .about-office {
+                  &.fc,
+                  &.sts {
+                    margin-top: -1px;
+                    border-bottom: 1px solid #0c8bc3;
+                  }
+                  &.md {
+                    margin-top: -122px;
+                    border-bottom: 1px solid #0c8bc3;
+                  }
+                }
+              }
+            }
+          }
+          .right-c {
+            .department {
+              &.bottom {
+                .office {
+                  &.last-item {
+                    padding-bottom: 19px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.active {
+          display: block;
+        }
+      }
+    }
+    &.for-student {
+      ._nav-dropdown-menu(250px, @nav-vnz-bg-color-for-student, @nav-vnz-bg-color-for-student-odd, @info-blocks-vnz-bg-color-for-student-main-content-hover, @info-blocks-vnz-bg-color-for-student-title-hover);
+      position: relative;
+      background: @nav-vnz-bg-color-default-state;
+      &:hover {
+        ._nav-for-student-hover;
+        ._transition(~"background .3s");
+        .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+    &.partnership {
+      ._nav-dropdown-menu(210px, @nav-vnz-bg-color-partnership, @nav-vnz-bg-color-partnership-odd, @info-blocks-vnz-color-partnership-main-content-hover, @info-blocks-vnz-color-partnership-title-hover);
+      background: @nav-vnz-bg-color-default-state;
+      .dropdown-menu {
+        right: 0!important;
+        left: auto;
+      }
+      &:hover {
+        ._nav-partnership-hover;
+        ._transition(~"background .3s");
+        .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+    &.odd {
+      background-color: @nav-vnz-bg-color-default-state-odd;
+      &.news-events {
+        ._nav-dropdown-menu(200px, @nav-vnz-bg-color-news-and-events, @nav-vnz-bg-color-news-and-events-odd, @info-blocks-vnz-bg-color-news-and-events-main-content-hover, @info-blocks-vnz-bg-color-news-and-events-title-hover);
+        position: relative;
+        &:hover {
+          ._nav-news-and-events-hover;
+          ._transition(~"background .3s");
+          .dropdown-menu {
+            display: block;
+          }
+        }
+      }
+      &.for-enrollee {
+        ._nav-dropdown-menu(250px, @nav-vnz-bg-color-for-enrollee, @nav-vnz-bg-color-for-enrollee-odd, @info-blocks-vnz-bg-color-for-enrollee-main-content-hover, @info-blocks-vnz-bg-color-for-enrollee-title-hover);
+        position: relative;
+        &:hover {
+          ._nav-for-enrollee-hover;
+          ._transition(~"background .3s");
+          .dropdown-menu {
+            display: block;
+          }
+        }
+      }
+      &.distance-learning {
+        ._nav-dropdown-menu(250px, @nav-vnz-bg-color-distance-learning, @nav-vnz-bg-color-distance-learning-odd, @info-blocks-vnz-bg-color-distance-learning-main-content-hover, @info-blocks-vnz-bg-color-distance-learning-title-hover);
+        position: relative;
+        &:hover {
+          ._nav-distance-learning-hover;
+          ._transition(~"background .3s");
+          .dropdown-menu {
+            display: block;
+          }
+        }
+      }
+    }
+    a {
+      ._font-family-nav-vnz;
+      display: inline-block;
+      padding: 0 17px;
+      text-decoration: none;
+      letter-spacing: normal;
+      line-height: 50px;
+      cursor: pointer;
+    }
+  }
+}
